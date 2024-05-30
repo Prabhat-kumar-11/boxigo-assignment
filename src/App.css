@@ -1,0 +1,91 @@
+.accordion {
+  width: 100%;
+}
+
+.accordion-item {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.accordion-header {
+  display: flex;
+}
+
+.accordion-button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.accordion-title {
+  flex: 1;
+  text-align: left;
+  color: red;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.category-count {
+  border: 2px solid red;
+  padding: 5px;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+.accordion-icon {
+  margin-left: auto;
+}
+
+.accordion-panel {
+  display: none;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 10px;
+}
+
+.accordion-item.active .accordion-panel {
+  display: flex;
+}
+
+.category {
+  font-weight: bold;
+}
+
+.item {
+  margin-bottom: 10px;
+}
+
+.item-details {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+}
+
+.item-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-option {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.item-qty {
+  font-weight: bold;
+  margin-left: 20px;
+}
