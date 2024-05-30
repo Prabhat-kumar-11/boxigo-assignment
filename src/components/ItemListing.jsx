@@ -23,7 +23,7 @@ const ItemListing = () => {
   useEffect(() => {
     const fetchMoves = async () => {
       try {
-        const response = await fetch(`http://test.api.boxigo.in/sample-data/`);
+        const response = await fetch(`https://backend-server-box.vercel.app/api/sample-data`);
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
