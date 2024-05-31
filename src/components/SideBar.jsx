@@ -4,7 +4,7 @@ import { faTruck, faUser, faClipboard, faSignOut } from '@fortawesome/free-solid
 
 const SideBar = () => {
   return (
-    <div className="w-1/4 bg-[#feffd4] text-white p-6 rounded-lg shadow-md">
+    <div className="w-full h-full bg-[#feffd4] text-white p-6 rounded-lg shadow-md">
       <div className="mb-4 flex items-center">
         <FontAwesomeIcon icon={faTruck} className="text-orange-500 mr-3 text-2xl" />
         <span className="text-lg font-bold text-orange-500">MY MOVES</span>

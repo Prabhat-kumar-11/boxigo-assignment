@@ -51,8 +51,8 @@ const ItemListing = () => {
     <div>
       {moves.map((move) => (
         <Fragment key={move.estimate_id}>
-          <div className="border-b border-gray-300 p-6  rounded-lg shadow-md mb-4 bg-[#feffd4]">
-            <div className="flex gap-10 mb-6 justify-between items-center">
+          <div className="border-b border-gray-300 p-6 rounded-lg shadow-md mb-4 bg-[#feffd4]">
+            <div className="flex flex-col lg:flex-row gap-10 mb-6 justify-between items-center">
               <div className="from_address text-center">
                 <span className="block text-gray-600">From</span>
                 <p className="font-semibold">{move.moving_from}</p>
@@ -70,7 +70,7 @@ const ItemListing = () => {
               </div>
             </div>
 
-            <div className="flex gap-10 mb-6 justify-between">
+            <div className="flex flex-col lg:flex-row gap-10 mb-6 justify-between">
               <div className="icon_text text-center">
                 <p>
                   <FontAwesomeIcon icon={faHome} className="text-red-500 text-2xl" />
@@ -107,7 +107,7 @@ const ItemListing = () => {
                 <label htmlFor={`checkbox-${move.estimate_id}`}></label>
                 <p className="text-gray-600">Is flexible</p>
               </div>
-              <div className="buttons flex gap-5">
+              <div className="buttons flex flex-col lg:flex-row gap-5">
                 <button
                   className="text-orange-500 border border-orange-500 py-2 px-4 rounded"
                   onClick={() => toggleMoveDetails(move.estimate_id)}
@@ -132,14 +132,14 @@ const ItemListing = () => {
 
             {showMoveDetails === move.estimate_id && (
               <div className="move-details p-6 border-t border-gray-300">
-                <div className="flex justify-between items-center mb-4">
+                <div className="flex flex-col lg:flex-row justify-between items-center mb-4">
                   <span className="font-bold text-gray-700">Additional Information</span>
                   <button className="bg-black text-white py-2 px-4 rounded">Edit Additional Info</button>
                 </div>
                 <div className="mb-4 text-gray-700">Test Data</div>
                 <div className="text-red-500 font-bold mb-2">Existing House Details</div>
 
-                <div className="flex justify-between w-3/4 mb-4">
+                <div className="flex flex-col lg:flex-row justify-between w-full mb-4">
                   <div>
                     <span className="font-bold">Floor No.</span>
                     <span className="ml-2">{move.existing_floor_no}</span>
@@ -155,7 +155,7 @@ const ItemListing = () => {
                 </div>
                 <div className="text-red-500 font-bold mb-2">New House Details</div>
 
-                <div className="flex justify-between w-3/4 mb-4">
+                <div className="flex flex-col lg:flex-row justify-between w-full mb-4">
                   <div>
                     <span className="font-bold">Floor No.</span>
                     <span className="ml-2">{move.new_floor_no}</span>
